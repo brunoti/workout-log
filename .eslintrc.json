@@ -1,0 +1,45 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "babel"
+  ],
+  "globals": {
+    "fetch": false,
+    "__DEV__": false,
+    "FormData": false
+  },
+  "rules": {
+    "func-names": ["error", "never"],
+    "react/prop-types": [true, {
+      "ignore": "navigation"
+    }],
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "import/resolver": {
+      "babel-module": {}
+    },
+    "react/jsx-filename-extension": 0,
+    "react/require-default-props": 0,
+    "react/no-unused-prop-types": 0,
+    "react/sort-comp": 0,
+    "react/no-typos": 0,
+    "react/no-array-index-key": 0,
+    "react/prefer-stateless-function": 0,
+    "react/no-did-mount-set-state": 0,
+    "class-methods-use-this": 0,
+    "global-require": 0,
+    "no-console": 0,
+    "no-shadow": 0,
+    "camelcase": 0,
+    "no-underscore-dangle": ["error", {
+      "allow": ["_root", "_class"]
+    }],
+    "import/no-extraneous-dependencies": [
+      "error", {
+        "devDependencies": true,
+        "packageDir": "./"
+      }
+    ]
+  }
+}
